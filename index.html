@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pedagogika— Test</title>
+  <meta name="description" content="O'zbek bolalar pedagogika fanidan o'zingizni sinab ko'ring." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+
+    <!-- ============ START SCREEN ============ -->
+    <section id="start" class="screen is-active">
+      <header class="brand">
+        <p class="eyebrow">pedagogika</p>
+        <h1 class="brand__title">Bilimingizni <span class="u-underline">sinang</span></h1>
+        <p class="brand__sub">
+          Jami <strong id="totalCount">0</strong> ta savol. Savol soni va rejimni tanlang —
+          natijangizni darhol ko'rasiz.
+        </p>
+      </header>
+
+      <div class="setup card">
+        <div class="setup__group">
+          <span class="setup__label">Nechta savol?</span>
+          <div class="chips" id="sizeChips" role="radiogroup" aria-label="Savollar soni">
+            <button class="chip" data-size="10" role="radio">10</button>
+            <button class="chip is-on" data-size="20" role="radio" aria-checked="true">20</button>
+            <button class="chip" data-size="50" role="radio">50</button>
+            <button class="chip" data-size="all" role="radio">Hammasi</button>
+          </div>
+        </div>
+
+        <div class="setup__group">
+          <span class="setup__label">Rejim</span>
+          <div class="chips" id="modeChips" role="radiogroup" aria-label="Rejim">
+            <button class="chip is-on" data-mode="practice" role="radio" aria-checked="true">
+              Mashq <small>javob darhol</small>
+            </button>
+            <button class="chip" data-mode="exam" role="radio">
+              Imtihon <small>natija oxirida</small>
+            </button>
+          </div>
+        </div>
+
+        <label class="toggle">
+          <input type="checkbox" id="shuffleToggle" checked />
+          <span class="toggle__box" aria-hidden="true"></span>
+          <span>Savollarni aralashtirish</span>
+        </label>
+
+        <button id="startBtn" class="btn btn--primary btn--block">Boshlash</button>
+        <p class="setup__best" id="bestLine" hidden></p>
+      </div>
+    </section>
+
+    <!-- ============ QUIZ SCREEN ============ -->
+    <section id="quiz" class="screen">
+      <div class="topbar">
+        <button id="quitBtn" class="btn btn--ghost btn--sm" aria-label="To'xtatish">← Chiqish</button>
+        <div class="topbar__meta">
+          <span id="counter" class="counter">1 / 20</span>
+          <span id="scorePill" class="pill">0 to'g'ri</span>
+        </div>
+      </div>
+
+      <div class="progress" aria-hidden="true"><div id="progressBar" class="progress__bar"></div></div>
+
+      <div class="card quiz__card">
+        <p id="qNumber" class="qnum">Savol 1</p>
+        <h2 id="qText" class="qtext">…</h2>
+        <div id="options" class="options" role="listbox" aria-label="Javob variantlari"></div>
+      </div>
+
+      <div class="quiz__foot">
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+        <button id="nextBtn" class="btn btn--primary" disabled>Keyingi</button>
+      </div>
+    </section>
+
+    <!-- ============ RESULTS SCREEN ============ -->
+    <section id="results" class="screen">
+      <div class="card result__card">
+        <div class="result__ring" id="resultRing">
+          <span id="resultPct" class="result__pct">0%</span>
+        </div>
+        <h2 id="resultTitle" class="result__title">Natija</h2>
+        <p id="resultLine" class="result__line"></p>
+        <div class="result__actions">
+          <button id="againBtn" class="btn btn--primary">Yana yechish</button>
+          <button id="reviewBtn" class="btn btn--ghost">Xatolarni ko'rish</button>
+        </div>
+      </div>
+      <div id="review" class="review" hidden></div>
+    </section>
+
+    <footer class="foot">pedagogika test — o'z-o'zini tekshirish uchun</footer>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
