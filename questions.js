@@ -333,7 +333,7 @@ window.QUESTIONS = [
   {"id": 332, "q": "Aniq maqsadli hamda ijtimoiy tarixiy tajriba asosida yosh avlodni har tamonlama komol toptirishga ularni ongini ma`naviy axlooqiy qadriyatlar va dunyoqarashini shakllantirishga qaratilgan tizimli jarayon qaysi jarayonga kiradi", "options": ["tarbiya", "ta'lim", "ma`lumot", "o`qitish"], "answer": 0},
   {"id": 333, "q": "Qonun loyihasini takomillashtirish davomida nechta norma va qoidalar qayta ko'rib chiqildi", "options": ["238 ta norma", "300 ta norma", "260 ta norma", "230 ta norma"], "answer": 0},
   {"id": 334, "q": "\"Insonning butun hayoti davomida ta'lim olishi\" qaysi moddalar bilan uzviy bog'liq", "options": ["15-19-moddalar", "41-42 moddalar", "45-57 moddalar", "44-23 moddalar"], "answer": 0},
-  {"id": 335, "q": "O'qish davomiyligi kamida bir yil bo'lgan tayanch oliy ta'lim turi bu ...", "options": ["bakalavriat", "Magistratura", "Doktorantura", "Maktabgacha ta'lim"], "answer": 0},
+  {"id": 335, "q": "O'qish davomiyligi kamida bir yil bo'lgan tayanch oliy ta'lim turi bu ...", "options": ["Magistratura", "bakalavriat", "Doktorantura", "Maktabgacha ta'lim"], "answer": 0},
   {"id": 336, "q": "20-modda nima haqida", "options": ["inklyuziv ta'lim", "muommoli ta`lim", "hamkorlikdagi ta'lim", "eksternat ta'lim"], "answer": 0},
   {"id": 337, "q": "Dual ta'lim, katta yoshdagilarni o'qitish va ularga ta'lim berish qaysi modda", "options": ["17-modda", "15-modda", "16-modda", "22-modda"], "answer": 0},
   {"id": 338, "q": "Katta yoshdagilarni o'qitish va ularga ta'lim berish qaysi jarayonga kiradi", "options": ["butun umr davomida o'qitish", "10 yil davomida", "12 yil davomida", "umrini so`ngigacha"], "answer": 0},
